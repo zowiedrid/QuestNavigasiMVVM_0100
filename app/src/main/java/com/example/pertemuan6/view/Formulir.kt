@@ -2,6 +2,7 @@ package com.example.pertemuan6.view
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.material3.HorizontalDivider
@@ -56,6 +57,13 @@ fun FormIsian(
                 color = Color.Red,
                 thickness = dimensionResource(id = R.dimen.thickness_divider)
             )
+
+            Row() {
+                jenisK.forEach {
+                    item ->
+                    Row(verticalAlignment = Alignment.CenterVertically) { }
+                }
+            }
         }
     }
 }
