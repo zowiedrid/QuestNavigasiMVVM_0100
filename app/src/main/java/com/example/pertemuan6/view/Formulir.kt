@@ -84,6 +84,15 @@ fun FormIsian(
                 color = Color.Red,
                 thickness = dimensionResource(id = R.dimen.thickness_divider)
             )
+
+            OutlinedTextField(
+                value = "",
+                singleLine = true,
+                onValueChange = {},
+                label = { Text(stringResource(id = R.string.alamat)) },
+                modifier = Modifier.padding(20.dp)
+                    .width(250.dp)
+            )
         }
     }
 }
