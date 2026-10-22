@@ -4,6 +4,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.internal.composableLambda
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavController
 import androidx.navigation.NavHost
 import androidx.navigation.NavHostController
@@ -47,4 +48,10 @@ private fun cancelAndBackToFormulirSaya(
     navController: NavController
 ){
     navController.popBackStack(route = Navigasi.formulirSaya.name, inclusive = false)
+}
+
+@Preview(showBackground = true)
+@Composable
+fun DataAppPreview(){
+    DataApp()
 }
