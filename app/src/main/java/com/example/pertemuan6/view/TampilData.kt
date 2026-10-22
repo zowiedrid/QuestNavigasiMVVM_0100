@@ -59,15 +59,16 @@ fun TampilData(
                 HorizontalDivider(
                     thickness = 1.dp, color = Color.Cyan
                 )
-                Spacer(modifier = Modifier.height(10.dp))
 
-                Button(
-                    onClick = { onBackButtonClick() },
-                    modifier = Modifier.padding(10.dp)
-                ) {
-                    Text(text = stringResource(id = R.string.back))
             }
+            Spacer(modifier = Modifier.height(10.dp))
+
+            Button(
+                onClick = { onBackButtonClick() },
+                modifier = Modifier.padding(10.dp)
+            ) {
+                Text(text = stringResource(id = R.string.back))
         }
 
     }
-}
+}}
