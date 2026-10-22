@@ -78,6 +78,12 @@ fun FormIsian(
                     }
                 }
             }
+
+            HorizontalDivider(
+                modifier = Modifier.padding(20.dp),
+                color = Color.Red,
+                thickness = dimensionResource(id = R.dimen.thickness_divider)
+            )
         }
     }
 }
